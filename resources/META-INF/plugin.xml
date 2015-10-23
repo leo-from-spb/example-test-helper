@@ -2,7 +2,7 @@
   <id>lb.ExampleTestHelper</id>
   <name>Example Test Helper</name>
   <version>1.0</version>
-  <vendor email="leonidos@gmail.com">Leo</vendor>
+  <vendor email="leonidos@gmail.com" url="https://github.com/leo-from-spb">Leo</vendor>
 
   <description><![CDATA[
       Helps to work on <em>ExampleTest</em>.
@@ -14,7 +14,11 @@
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="143.0"/>
+  <idea-version since-build="142.0"/>
+
+
+
+
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
@@ -24,6 +28,9 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+
+    <fileTypeFactory implementation="lb.eth.ExampleTestOrderFileTypeFactory"/>
+
   </extensions>
 
   <actions>
